@@ -1,0 +1,106 @@
+@import url(//fonts.googleapis.com/css?family=Pacifico);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+img {
+    filter: brightness(0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* height: 100%; */
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+}
+
+.nav{
+    position: sticky;
+    top: 0;
+}
+
+.bar ul{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 3em;
+}
+
+.bar ul li{
+    list-style: none;
+    font: 1.5rem 25vh;
+    font-family: 'Pacifico', cursive;
+    padding: 1em;
+    color: #fee;
+    text-shadow: 0 0px 10px, 0 0 1em #560a86, 0 0 0.5em #560a86,
+        0 0 0.1em #560a86, 0 10px 3px #333;
+
+}
+
+.text{
+    margin-top: 14em;
+}
+
+.text b {
+
+    font: 400 25vh "Pacifico";
+    letter-spacing: -5px;
+    color: #fee;
+    text-shadow: 0 0px 10px, 0 0 1em #560a86, 0 0 0.5em #560a86,
+        0 0 0.1em #560a86, 0 10px 3px #333;
+    padding-left: 0.3em;
+
+
+}
+
+span {
+    animation: flicker linear infinite 2s;
+}
+
+@keyframes flicker {
+    75% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    76% {
+        color: #222;
+    }
+
+    77% {
+        color: inherit;
+        text-shadow: none;
+    }
+
+    78% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    79% {
+        color: #222;
+        text-shadow: none;
+    }
+
+    80% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    90% {
+        color: #222;
+        text-shadow: none;
+    }
+
+    90.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+}
